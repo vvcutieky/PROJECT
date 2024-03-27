@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-title class="ion-padding-start">Calendar</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login">
+        <ion-icon name="person-circle" size="large" color="dark"></ion-icon>      
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="calendar_header_platter">
+    <div id="cal_header">Store Calendar</div>
+    <div id="cal_subtitle">Sunday 7 May</div>
+  </div>
+
+  <div class="calendar">
+    <ion-datetime presentation="date" displayFormat="DD/MM/YYYY" (ionChange)="showEvent($event)" [highlightedDates]="highlightedDates"></ion-datetime>
+  </div>
+
+
+  <div class="ion-margin">
+    <ion-input class="result" placeholder="Click a date to show events" [(ngModel)]="selectedDateEvent" disabled></ion-input>
+  </div>
+  
+
+</ion-content>

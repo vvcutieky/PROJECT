@@ -1,0 +1,74 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-title class="ion-padding-start">About</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login">
+        <ion-icon name="person-circle" size="large" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/assets/video/See what's new at PLV!.mp4" type="video/mp4">
+</video>
+
+<div class="about_vid">
+  <button id="open" class="btn" expand="block">Explore Now</button>
+</div>
+
+  <ion-modal trigger="open" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+    <ng-template>
+      <div class="block">
+        <ion-label>
+          <strong>Mission<br><br></strong>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br><br>
+          <strong>Vision<br><br></strong>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          <ion-item lines="inset"></ion-item><br>
+          <strong>Store</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </ion-label>
+      </div>
+    </ng-template>
+  </ion-modal>
+</div>
+
+  <div class="about">
+    <ion-card-title><strong>About</strong></ion-card-title>
+    <ion-card-subtitle>sub</ion-card-subtitle>
+  </div>
+
+  <ion-item lines="inset">
+    <ion-button slot="end" shape="round" routerLink="/tabs/about/courses" routerDirection="forward">View</ion-button>
+    <ion-label>Store</ion-label>
+  </ion-item>
+
+  <ion-item lines="inset">
+    <ion-button slot="end" shape="round" routerLink="/tabs/about/deans" routerDirection="forward">View</ion-button>
+    <ion-label>Store</ion-label>
+  </ion-item>
+
+  <ion-item lines="inset">
+    <ion-button slot="end" shape="round" routerLink="/tabs/about/chairpersons" routerDirection="forward">View</ion-button>
+    <ion-label>Store</ion-label>
+  </ion-item>
+
+  <ion-item lines="inset">
+    <ion-button slot="end" shape="round" routerLink="/tabs/about/instructors" routerDirection="forward">View</ion-button>
+    <ion-label>Store</ion-label>
+  </ion-item>
+
+  <ion-item lines="inset" shape="round">
+    <ion-button slot="end" shape="round" routerLink="/tabs/about/counselors" routerDirection="forward">View</ion-button>
+    <ion-label>Store</ion-label>
+  </ion-item>
+
+  <ion-item lines="inset" shape="round">
+    <ion-button slot="end" shape="round" routerLink="/tabs/about/organizations" routerDirection="forward">View</ion-button>
+    <ion-label>Store</ion-label>
+  </ion-item>
+
+</ion-content>

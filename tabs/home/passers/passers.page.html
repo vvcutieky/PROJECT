@@ -1,0 +1,32 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-no-padding"><strong>Home</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-horizontal ion-padding-bottom" [fullscreen]="true">
+
+  <p class="subheader">Store</p>
+  <h4 class="header">Welcome!</h4>
+
+  <ion-input class="ion-margin-top" label="Surname" label-placement="floating" fill="outline" placeholder="Enter your surname here..."></ion-input>
+  <br>
+  <ion-input label="First name" label-placement="floating" fill="outline" placeholder="Enter your first name here..."></ion-input>
+  <br>
+  <ion-input label="Birthdate" label-placement="floating" fill="outline" placeholder="mm/dd/yyyy"></ion-input>
+
+  <div class="ion-margin-vertical flex ion-justify-content-around">
+    <ion-button type="submit">Submit</ion-button>
+    <ion-button type="reset">Reset</ion-button>
+  </div>
+
+  <div class="ion-margin-vertical">
+    <p class="subheader">sub</p>
+    <h4 class="header">Result</h4>
+  </div>
+  <img src="/assets/placeholder/Passer.png">
+
+</ion-content>

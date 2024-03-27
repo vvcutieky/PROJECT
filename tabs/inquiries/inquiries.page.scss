@@ -1,0 +1,55 @@
+ion-toolbar {
+  --min-height: 70px;
+
+  ion-title {
+    --color: rgb(43, 231, 127);
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+
+ion-content {
+  --background: #b8ffae;
+}
+
+ion-accordion-group {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+ion-item {
+  --background: rgb(191, 252, 183);
+}
+
+.item-inner {
+  --ion-color: rgb(146, 235, 134);
+}
+
+.test {
+  background-color: rgb(67, 245, 112);
+}
+
+.inquiries_header_platter {
+  margin: 24px;
+}
+
+#faq_header {
+  color: rgb(96, 223, 124);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+#faq_subtitle {
+  color: #3cb346;
+  padding-top: 3;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.message {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 24px;
+}

@@ -1,0 +1,41 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-title class="ion-padding-start">HI</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login">
+        <ion-icon name="person-circle" size="large" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-horizontal ion-padding-bottom" [fullscreen]="true">
+
+  <div class="ion-padding-bottom">
+    <ion-card-title><strong>Announcements</strong></ion-card-title>
+    <ion-card-subtitle><strong>Sunday, May 7</strong></ion-card-subtitle>
+  </div>
+
+  <div class="middle">
+    <swiper-container
+    [loop]="true"
+    [autoplay]="true"
+    [pagination]="true"
+    [spaceBetween]="20">
+    <swiper-slide *ngFor="let announcement of announcements" routerLink="/tabs/home/announcement" routerDirection="forward"><img src="/assets/placeholder/announcements/{{announcement.header}}"></swiper-slide>
+  </swiper-container>
+  </div>
+
+
+  <h5 class="ion-padding-top"><strong>Free Coffee</strong></h5>
+  <img width="100%" height="46" src="/assets/placeholder/312x46.png" routerLink="/tabs/home/passers">
+
+  <h5 class="ion-padding-top"><strong>Events</strong></h5>
+  <swiper-container
+    [slidesPerView]="2.3"
+    [spaceBetween]="10">
+    <swiper-slide *ngFor="let event of events" routerLink="/tabs/home/event">
+      <img src="/assets/placeholder/events/{{event.poster}}">
+    </swiper-slide>
+  </swiper-container>
+</ion-content>

@@ -1,0 +1,28 @@
+ion-toolbar {
+  --min-height: 70px;
+
+  ion-title {
+    --color: rgb(43, 231, 127);
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+swiper-container {
+  --swiper-pagination-color: hsl(123, 80%, 72%);
+}
+
+ion-card-title {
+  color: var(--ion-card-title);
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+}

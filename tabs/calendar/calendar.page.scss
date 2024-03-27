@@ -1,0 +1,47 @@
+ion-toolbar {
+    --min-height: 70px;
+  
+    ion-title {
+      --color: rgb(43, 231, 127);
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+
+.calendar_header_platter {
+    margin: 24px;
+}
+
+#cal_header {
+    color: rgb(96, 223, 124);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+#cal_subtitle {
+    color: #3cb346;
+    padding-top: 3;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+ion-datetime {
+    --background: rgb(157, 243, 149);
+}
+
+.calendar {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.result {
+    color: #FBFBFF;
+    opacity: 85%;
+
+    background-color: #64e67a; 
+    border-radius: 10px; 
+
+    text-align: center;
+    font-weight: 900;
+}
